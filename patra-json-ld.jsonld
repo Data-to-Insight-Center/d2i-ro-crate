@@ -1,0 +1,100 @@
+{
+  "@context": "<github link to context file; can be same for all ro-crates>",
+  "@graph": [
+    {
+      "@type": "Model Card",
+      "identifier": "1b8e2ce1b376f4c2084c35f78543c591db132696d274ed924423e92fdbe6a99p",
+      "name": "UCI Adult Data Analysis via Random Forest",
+      "version": "0.1",
+      "description": "Using a Random Forest to train on UCI Adult Data Analysis",
+      "disambiguatingDescription": "UCI Adult Data analysis using SKLearn and Random Forest",
+      "keywords": "uci adult, sklearn, random_forest, explainability, fairness, fairlearn, shap",
+      "creator": "Sachith Withana",
+      "hasInput": {
+        "@type": "Dataset",
+        "name": "UCI Adult Dataset",
+        "url": "https://archive.ics.uci.edu/dataset/2/adult"
+      },
+      "hasOutput": {
+        "@type": "Dataset",
+        "name": "Random Forest Model Output",
+        "url": "https://github.iu.edu/swithana/mcwork/rf_sklearn/adult_model.pkl"
+      },
+      "isBasedOn": null,
+      "ModelCategory": "classification",
+      "documentation": null
+    },
+    {
+      "@type": "Model",
+      "name": "UCI Adult Random Forest model",
+      "version": "0.1",
+      "description": "Census classification problem using Random Forest",
+      "creator": "Sachith Withana",
+      "url": "https://github.iu.edu/swithana/mcwork/randomforest/adult_model.pkl",
+      "license": {
+          "@id": "BSD-3 Clause",
+          "url": "https://opensource.org/license/bsd-3-clause"
+      },
+      "usesFramework": "sklearn",
+      "Accuracy": 0.8616612927990174
+    },
+    {
+      "@type": "BiasAnalysis",
+      "@id": [
+        {
+          "name": "Demographic Parity Difference",
+          "value": 0.18807341711946762
+        },
+        {
+          "name": "Equal Odds Difference",
+          "value": 0.13578013433668856
+        }
+      ]
+    },
+    {
+      "@type": "ExplainabilityAnalysis",
+      "@id": [
+        {
+          "name": "Capital Gain",
+          "value": 0.11401386634345272
+        },
+        {
+          "name": "Relationship",
+          "value": 0.08554672353869591
+        },
+        {
+          "name": "Education Number",
+          "value": 0.07078810916586463
+        },
+        {
+          "name": "Marital Status",
+          "value": 0.05127148555801796
+        },
+        {
+          "name": "Age",
+          "value": 0.05031981919918962
+        },
+        {
+          "name": "Sex",
+          "value": 0.020569501936633972
+        },
+        {
+          "name": "Hours per Week",
+          "value": 0.018891666385998176
+        },
+        {
+          "name": "Occupation",
+          "value": 0.017036168924196318
+        },
+        {
+          "name": "Final Weight (fnlwgt)",
+          "value": 0.016200577227414213
+        },
+        {
+          "name": "Work Class",
+          "value": 0.014328513735949854
+        }
+      ]
+    }
+  ]
+}
