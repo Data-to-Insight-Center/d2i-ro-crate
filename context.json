@@ -1,0 +1,49 @@
+{
+     "@id": "https://github.com/Data-to-Insight-Center/d2i-ro-crate/context",
+     "name": [
+          "RO-Crate JSON-LD Context "
+     ],
+     "version": "1.0.0",
+     "url": {
+          "@id": "https://github.com/Data-to-Insight-Center/d2i-ro-crate/context.json"
+     },
+     "isBasedOn": [
+          {
+               "@id": "https://schema.datacite.org/meta/kernel-4.5/index.html"
+          },
+          {
+               "@id": "https://mintproject.github.io/Mint-ModelCatalog-Ontology/release/1.7.0/index-en.html"
+          },
+          {
+               "@id": "https://knowledgecaptureanddiscovery.github.io/pmlm/algorithms/release/0.0.1/index.html"
+          },
+          {
+               "@id": "https://knowledgecaptureanddiscovery.github.io/pmlm/data/release/0.0.1/index.html"
+          }
+     ],
+     "license": {
+          "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+     },
+     "@context": {
+          "identifier": "https://schema.org/identifier",
+          "name": "https://schema.org/name",
+          "datePublished": "https://schema.org/datePublished",
+          "version": "http://schema.org/version",
+          "disambiguatingDescription": "https://schema.org/disambiguatingDescription",
+          "Description": "https://schema.org/description",
+          "keywords": "http://schema.org/keywords",
+          "creator": "https://schema.org/creator",
+          "hasInput": "http://www.w3.org/ns/mls#hasInput",
+          "Data": "https://w3id.org/pmlm/data#Data",
+          "hasOutput": "http://www.w3.org/ns/mls#hasOutput",
+          "isBasedOn": "https://schema.org/isBasedOn",
+          "ModelCategory": "https://w3id.org/okn/o/sdm#ModelCategory",
+          "documentation": "https://schema.org/documentation",
+          "location": "http://schema.org/location",
+          "license": "https://schema.org/license",
+          "usesFramework": "https://w3id.org/pmlm/algorithms#usesFramework",
+          "Accuracy": "https://w3id.org/pmlm/algorithms#Accuracy",
+          "value": "https://schema.org/value",
+          "softwareRequirements": "https://schema.org/softwareRequirements",
+     }
+}
