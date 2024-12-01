@@ -1,5 +1,5 @@
 {
-  "@context": "<github link to context file; can be same for all ro-crates>",
+  "@context": "https://github.com/Data-to-Insight-Center/d2i-ro-crate/context.json",
   "@graph": [
     {
       "@type": "Model Card",
